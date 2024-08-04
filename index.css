@@ -1,0 +1,23 @@
+.place-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-box{
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+#place{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+#place:focus {
+    border: 1px solid red;
+    outline: 1px solid red;
+}
