@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Add a new Tourist Place</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="place-container">
-        <div class="place-name">
-            <div class="input-box">
+    <div class="container">
+        <div class="tittle-holder">
+            <h1>Add a new Tourist Place</h1>
+        </div>
+        <form>
+            <div class="form-group">
                 <div>
-                    <h2>Name: </h2>
+                    <label for="name">Name:</label>
                 </div>
                 <div>
-                    <input type="text" name="pName" height="20px" id="place">
-                </div>
-            </div>
-            <div class="input-box">
-                <div>
-                    <h2>Address: </h2>
-                </div>
-                <div>
-                    <input type="text" name="pName" height="20px" id="place">
+                    <input class="input-field" type="text" id="name" name="name">
                 </div>
             </div>
-            <div class="input-box">
+            <div class="form-group">
                 <div>
-                    <h2>Rating: </h2>
+                    <label for="address">Address:</label>
                 </div>
                 <div>
-                    <input type="text" name="pName" height="20px" id="place">
+                    <input class="input-field" type="text" id="address" name="address">
+                </div>
+                
+            </div>
+            
+            <div class="form-group">
+                <div>
+                    <label for="rating">Rating:</label>
+                </div>
+                <div>
+                    <input class="input-field" type="number" id="rating" name="rating" min="1" max="5" value="1">
                 </div>
             </div>
-            <div class="input-box">
+    
+            <div class="form-group">
                 <div>
-                    <h2>Type: </h2>
+                    <label for="type">Type:</label>
                 </div>
                 <div>
-                    <input type="text" name="pName" height="20px" id="place">
-                </div>
-            </div>
-            <div class="input-box">
-                <div>
-                    <h2>Picture: </h2>
-                </div>
-                <div>
-                    <input type="text" name="pName" height="20px" id="place">
+                    <select id="type" name="type" class="select-field">
+                        <option value="beach">Beach</option>
+                        <option value="hills">Hills</option>
+                        <option value="fountain">Fountain</option>
+                        <option value="landmark">Landmark</option>
+                    </select>
                 </div>
             </div>
+            <div class="form-group">
+                <div>
+                    <label for="picture">Picture:</label>
+                </div>
+                <div>
+                    <input class="input-field" type="file" id="picture" name="picture">
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div class="back">
+            <a href="./2nd/index.html" class="back-link">Back to Tourist Place List</a>
         </div>
         
-    </main>
+    </div>
 </body>
 </html>
